@@ -23,3 +23,10 @@ ano year default '2026'
 
 alter table cursos add column idcurso int first;
 alter table cursos add primary key(idcurso);
+
+alter table clientes
+drop column codigo;
+
+alter table clientes drop column profissao;
+alter table clientes
+add column profissao varchar(10) after nome;

@@ -17,3 +17,14 @@ insert into pessoas values
 (DEFAULT, 'Rafael', '1989-08-22', 'M', 85.0, 1.82, 'Uruguai'),
 (DEFAULT, 'Juliana', '1994-04-18', 'F', 58.0, 1.68, DEFAULT),
 (DEFAULT, 'Bruno', '1996-09-12', 'M', 95.0, 1.90, 'Paraguai');
+
+
+insert into cursos values 
+('1', 'Ciência da Computação', 'Curso de Bacharelado', '1350', '600', '2026'),
+('2', 'Engenharia da Computação', 'Curso de Bacharelado', '1380', '300', '2025'),
+('3', 'Ciência de Dados', 'Curso de Bacharelado', '1350', '600', '2026'),
+('4', 'PGP', 'Curso de Programação', '200', '10', '2023'),
+('5', 'HTML4', 'Programação Web', '40', '8', '2015'),
+('6', 'Turismo', 'Bacharelado', '3000', '500', '2025');
+
+select * from cursos;
