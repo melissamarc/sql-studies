@@ -15,4 +15,4 @@ where idcurso = '6';
 
 select * from cursos;
 
-truncate table cursos;
+truncate table clientes;
