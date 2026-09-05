@@ -36,6 +36,7 @@ where nome like 'p%'
 order by ano;
 
 select distinct nome from clientes;
+-- comando responsável por trazer apenas os nomes distintos da tabela clientes, ou seja, identifica os valores existentes e mostra apenas uma vez cada valor.
 
 select nome, nacionalidade from clientes 
 where nome like '%silva' 
@@ -60,3 +61,13 @@ select sum(totaulas) from cursos;
 select avg(totaulas) from cursos;
 
 select avg(peso) from clientes;
+
+-- agrupamento de cursos com carga horária igual, contagem de cursos e ordenação por ordem decrescente
+select carga, COUNT(nome) from cursos
+GROUP BY carga
+ORDER BY carga DESC;
+
+-- agrupamento de cursos com total de aulas iguais, contagem de cursos com o mesmo total de aulas e exibição do total de aulas apenas para cursos onde a contagem de aulas iguais seja maior que 2
+select totaulas, count(nome) from cursos
+group by totaulas
+having count(nome) > 2;
